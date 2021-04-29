@@ -1,12 +1,11 @@
 import React from 'react'
 
 // COMPONENTS
-import Tetris from './Tetris.js'
-
+import Tetris from './Tetris'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <Tetris />
   )
 }
 

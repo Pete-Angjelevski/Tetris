@@ -5,10 +5,13 @@ import Stage from './Stage'
 import Display from './Display'
 import StartButton from './StartButton'
 
+// HELPERS
+import { createStage } from '../gameHelpers'
+
 export default function Tetris () {
   return (
     <div>
-      <Stage />
+      <Stage stage={createStage()}/>
       <aside>
         <div>
           <Display text="Score"/>
