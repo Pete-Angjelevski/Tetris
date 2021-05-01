@@ -22,11 +22,16 @@ export function useStage (player, resetPlayer) {
         })
       })
 
+      if (player.collided) {
+        console.log(resetPlayer)
+        resetPlayer()
+      }
+
       return newStage
     }
 
     setStage(prev => updateStage(prev))
-  }, [player])
+  }, [player, resetPlayer])
 
   return [stage, setStage]
 }
