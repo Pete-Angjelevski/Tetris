@@ -1,8 +1,10 @@
 body {
     margin: 0;
+    /* font-family: Fredoka One; */
 }
 
-@font-face {
-    font-family: 'Pixel';
-    src: url('font/pixel-lcd-7.woff') format('woff');
-}
+/* @font-face {
+    font-family: 'Fredoka One';
+    src: url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    
+} */

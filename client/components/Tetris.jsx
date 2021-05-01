@@ -102,7 +102,10 @@ export default function Tetris () {
         <Stage stage={stage}/>
         <aside>
           {gameOver ? (
-            <Display gameOver={gameOver} text='Game Over' />
+            <>
+              <Display text={`Final Score: ${score}`}/>
+              <Display gameOver={gameOver} text='Game Over' />
+            </>
           ) : (
             <div>
               <Display text={`Score: ${score}`}/>
