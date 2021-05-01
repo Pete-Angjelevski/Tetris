@@ -1,8 +1,12 @@
 import React from 'react'
 
+// STYLES
+import { StyledInstructions } from './styles/StyledInstructions'
+
 export default function Instructions ({ toGame }) {
   return (
-    <div >
+    <StyledInstructions >
+
       <h1>Goal</h1>
       <p>You have to make full horizontal lines with the different shaped blocks that fall into the game area. Full lines will then disappear and provide points. The more lines you make at the same time, the more points you earn.</p>
       <h1>Score Calculation</h1>
@@ -19,6 +23,6 @@ export default function Instructions ({ toGame }) {
       <p>Up arrow key:	rotate block clockwise</p>
       <button onClick={toGame} >OK!</button>
 
-    </div>
+    </StyledInstructions>
   )
 }

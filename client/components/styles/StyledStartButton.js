@@ -13,6 +13,6 @@ export const StyledStartButton = styled.div`
     font-family: 'VT323', monospace;
     font-size: 2rem;
     outline: none;
-    cursor: pointer;
+    cursor: cell;
 
 `

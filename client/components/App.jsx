@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 
+// Styles
+import { StyledApp } from './styles/StyledApp'
+
 // COMPONENTS
 import Tetris from './Tetris'
 import Instructions from './Instructions'
+import Header from './Header'
 
 const App = () => {
   const [showInstructions, setShowInstructions] = useState(true)
@@ -12,12 +16,12 @@ const App = () => {
   }
 
   return (
-    <>
-      <h1>Pete's Tetris</h1>
+    <StyledApp>
+      <Header />
 
       {showInstructions && <Instructions toGame={ toGame }/>}
       {!showInstructions && <Tetris />}
-    </>
+    </StyledApp>
   )
 }
 

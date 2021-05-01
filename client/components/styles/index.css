@@ -1,10 +1,8 @@
 body {
     margin: 0;
+    background: url("https://i.pinimg.com/originals/3f/a9/fe/3fa9fe249f516ff87909b587f7fefc8e.jpg");
     /* font-family: Fredoka One; */
+    /* background-color: blue; */
+    font-size: 16px;
 }
 
-/* @font-face {
-    font-family: 'Fredoka One';
-    src: url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-    
-} */
