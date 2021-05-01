@@ -48,5 +48,5 @@ export function useStage (player, resetPlayer) {
     setStage(prev => updateStage(prev))
   }, [player, resetPlayer])
 
-  return [stage, setStage]
+  return [stage, setStage, rowsCleared]
 }

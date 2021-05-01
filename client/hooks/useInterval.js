@@ -18,5 +18,5 @@ export function useInterval(callback, delay) {
         clearInterval(id);
       };
     }
-  }, [delay]);
+  }, [delay]); 
 }
