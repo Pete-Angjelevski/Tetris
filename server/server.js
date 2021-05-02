@@ -7,8 +7,8 @@ server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 
 // ROUTES
-const highscoreRoutes = require('./routes/highscore')
+const highscoresRoutes = require('./routes/highscores')
 
-server.use('/api/v1/highscore', highscoreRoutes)
+server.use('/api/v1/highscores', highscoresRoutes)
 
 module.exports = server
