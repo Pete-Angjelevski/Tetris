@@ -3,7 +3,6 @@ exports.up = function (knex) {
     table.increments('id').primary()
     table.string('name')
     table.binary('highscore')
-    table.binary('ranking')
   })
 }
 

@@ -7,4 +7,7 @@ module.exports = {
 function getHighscores (db = connection) {
   return db('highscore')
     .select()
+    .then(results => {
+      return results.sort((a, b) => b.highscore - a.highscore)
+    })
 }
