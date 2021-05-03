@@ -1,7 +1,8 @@
 const connection = require('./connection')
 
 module.exports = {
-  getHighscores
+  getHighscores,
+  addHighscore
 }
 
 function getHighscores (db = connection) {
@@ -10,4 +11,9 @@ function getHighscores (db = connection) {
     .then(results => {
       return results.sort((a, b) => b.highscore - a.highscore)
     })
+}
+
+function addHighscore (newHighscore, db = connection) {
+  return db('highscore')
+    .insert({ name: newHighscore.name, highscore: newHighscore.highscore })
 }

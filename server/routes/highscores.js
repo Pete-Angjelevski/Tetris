@@ -20,3 +20,21 @@ router.get('/', (req, res) => {
       })
     })
 })
+
+router.post('/', (req, res) => {
+  const newHighscore = req.body
+
+  db.addHighscore(newHighscore)
+    .then(highscores => {
+      res.json(highscores)
+      return null
+    })
+    .catch((err) => {
+      console.log(err.message)
+      res.status(500).json({
+        error: {
+          title: 'Unable to add score'
+        }
+      })
+    })
+})
