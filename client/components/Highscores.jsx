@@ -12,7 +12,19 @@ export default function Highscores () {
   return (
     <div>
       <table>
-
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+        {
+          scores.map(score => {
+            return (
+              <tr key={score.id}>
+                <td>{score.name}</td>
+                <td>{score.highscore}</td>
+              </tr>)
+          })
+        }
       </table>
     </div>
   )
