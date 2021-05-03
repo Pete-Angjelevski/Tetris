@@ -1,9 +1,5 @@
 import request from 'superagent'
 
-export function getScores () {
+export function getHighscoresApi () {
   return request.get('api/v1/highscores/')
-    .then(res => {
-      return res.body
-    })
-    .catch(err => console.error(err))
 }

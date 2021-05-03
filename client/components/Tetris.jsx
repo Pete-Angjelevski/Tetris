@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Route, Link } from 'react-router-dom'
 
 // STYLES
 import { StyledTetris, StyledTetrisWrapper } from './styles/StyledTetris'
@@ -7,6 +8,7 @@ import { StyledTetris, StyledTetrisWrapper } from './styles/StyledTetris'
 import Stage from './Stage'
 import Display from './Display'
 import StartButton from './StartButton'
+import Highscores from './Highscores'
 
 // HELPERS
 import { createStage, checkCollision } from '../gameHelpers'
@@ -114,6 +116,10 @@ export default function Tetris () {
             </div>
           )}
           <StartButton callback={startGame}/>
+          <button>
+            <Link to="/highscores">Highscores</Link>
+            <Route path="/highscores" component={Highscores}/>
+          </button>
         </aside>
       </StyledTetris>
     </StyledTetrisWrapper>)
