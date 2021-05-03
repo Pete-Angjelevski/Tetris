@@ -1,11 +1,17 @@
-import React, { useEffect } from 'react'
-import { connect } from 'react-redux'
-import { getAllHighscores } from '../actions/highscoresActions'
+import React, { useEffect, useState } from 'react'
 
-function Highscores ({ highscores }) {
+import { getHighscoresApi } from '../API/highscoreAPI'
+
+export default function Highscores () {
+  const [scores, setScores] = useState([])
+
   useEffect(() => {
-    console.log('within component', highscores)
-    getAllHighscores()
+    getHighscoresApi()
+      .then(res => {
+        setScores(res)
+        return null
+      })
+      .catch(err => console.log(err))
   }, [])
 
   return (
@@ -19,7 +25,7 @@ function Highscores ({ highscores }) {
         </thead>
         <tbody>
           {
-            highscores.map(score => {
+            scores.map(score => {
               return (
                 <tr key={score.id}>
                   <td>{score.name}</td>
@@ -32,11 +38,3 @@ function Highscores ({ highscores }) {
     </div>
   )
 }
-
-function mapStateToProps (state) {
-  return {
-    highscores: state.highscores
-  }
-}
-
-export default connect(mapStateToProps)(Highscores)
