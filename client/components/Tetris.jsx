@@ -9,6 +9,7 @@ import Stage from './Stage'
 import Display from './Display'
 import StartButton from './StartButton'
 import Highscores from './Highscores'
+import GameOver from './GameOver'
 
 // HELPERS
 import { createStage, checkCollision } from '../gameHelpers'
@@ -105,8 +106,7 @@ export default function Tetris () {
         <aside>
           {gameOver ? (
             <>
-              <Display text={`Final Score: ${score}`}/>
-              <Display gameOver={gameOver} text='Game Over' />
+              <GameOver score={score} />
             </>
           ) : (
             <div>

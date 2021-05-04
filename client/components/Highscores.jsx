@@ -12,7 +12,7 @@ export default function Highscores () {
         return null
       })
       .catch(err => console.log(err))
-  }, [])
+  }, [scores])
 
   return (
     <div>

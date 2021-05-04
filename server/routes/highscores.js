@@ -25,8 +25,8 @@ router.post('/', (req, res) => {
   const newHighscore = req.body
 
   db.addHighscore(newHighscore)
-    .then(highscores => {
-      res.json(highscores)
+    .then(scores => {
+      res.json(scores)
       return null
     })
     .catch((err) => {
