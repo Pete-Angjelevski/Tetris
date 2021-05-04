@@ -85,6 +85,7 @@ Reformat GameOver component and create AddHighscore routes/ dbHelpers and APIs
 - Pause Game functionality 
 - Reformat Game Presentation
 - Add further CSS to unstyled components and touch ups 
+- Transform into mobile app with React Native 
 
 
 
