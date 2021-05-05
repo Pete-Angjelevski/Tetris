@@ -7,6 +7,8 @@ Technology Utilised:
 - RESTful APIs/ Backend Routes with SuperAgent.js and Express.js
 - CSS with Styled Components
 
+** Added TypeScript to project for learning and practice
+
 
 To spin up the app:
 
