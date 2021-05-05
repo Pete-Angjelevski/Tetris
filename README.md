@@ -2,7 +2,7 @@
 
 Technology Utilised:
 
-- React + React Hooks
+- React + React Hooks + React Routing
 - Database with SQL and Knex.js
 - RESTful APIs/ Backend Routes with SuperAgent.js and Express.js
 - CSS with Styled Components
