@@ -117,8 +117,10 @@ export default function Tetris () {
           )}
           <StartButton callback={startGame}/>
           <button>
-            <Link to="/highscores">Highscores</Link>
-            <Route path="/highscores" component={Highscores}/>
+            <Link to="/highscores">
+              <button>Highscores</button>
+            </Link>
+            {/* <Route path="/highscores" component={Highscores}/> */}
           </button>
         </aside>
       </StyledTetris>

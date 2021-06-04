@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Route } from 'react-router-dom'
 
 // Styles
 import { StyledApp } from './styles/StyledApp'
@@ -7,6 +8,7 @@ import { StyledApp } from './styles/StyledApp'
 import Tetris from './Tetris'
 import Instructions from './Instructions'
 import Header from './Header'
+import Highscores from './Highscores'
 
 const App = () => {
   const [showInstructions, setShowInstructions] = useState(true)
@@ -21,6 +23,7 @@ const App = () => {
 
       {showInstructions && <Instructions toGame={ toGame }/>}
       {!showInstructions && <Tetris />}
+      <Route path="/highscores" component={Highscores}/>
     </StyledApp>
   )
 }

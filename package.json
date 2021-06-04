@@ -46,6 +46,7 @@
     "express": "^4.17.1",
     "knex": "^0.95.4",
     "pg": "^8.6.0",
+    "react-modal": "^3.14.2",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "sqlite3": "^5.0.2",
