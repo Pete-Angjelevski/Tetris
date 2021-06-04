@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { getHighscoresApi } from '../API/highscoreAPI'
+
+// STYLES
+import { StyledHighscores } from './styles/StyledHighscores'
 
 export default function Highscores () {
   const [scores, setScores] = useState([])
@@ -17,8 +20,11 @@ export default function Highscores () {
   }, [scores])
 
   return (
-    <div>
-      <Link to='/'>Close</Link>
+    <StyledHighscores>
+      <div >
+        <h1> High Scores</h1>
+        <Link to='/'><button>X</button></Link>
+      </div>
       <table>
         <thead>
           <tr>
@@ -40,6 +46,6 @@ export default function Highscores () {
           }
         </tbody>
       </table>
-    </div>
+    </StyledHighscores>
   )
 }

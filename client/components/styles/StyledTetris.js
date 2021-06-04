@@ -3,8 +3,8 @@ import styled from 'styled-components'
 // import bgImage from './img/bg.png'
 
 export const StyledTetrisWrapper = styled.div`
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     
     background-size: cover;
     overflow: hidden;
@@ -22,5 +22,21 @@ export const StyledTetris = styled.div`
         max-width: 200px;
         display: block;
         padding: 0 20px;
+    }
+
+    button {
+        box-sizing: border-box;
+        margin: 0 0 20px 0;
+        padding: 10px;
+        min-height: 20px;
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        background: #333;
+        font-family: 'VT323', monospace;
+        font-size: 2rem;
+        outline: none;
+        cursor: cell;
     }
 `
