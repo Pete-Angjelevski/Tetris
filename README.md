@@ -17,6 +17,21 @@ To spin up the app:
 * npm run dev to spin up server 
 * Visit https://localhost:3000 to view app. 
 
+Screen Shots: 
+
+Instructions . . .
+
+![instructions](server/public/screenshots/Instructions.png)
+
+Game . . .
+
+![game](server/public/screenshots/Tetris.png)
+
+High Scores . . .
+
+![highscores](server/public/screenshots/Highscores.png)
+
+
 ## GOAL 1 (Completed)
 
 Scaffold tetris game components
