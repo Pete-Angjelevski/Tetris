@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 // STYLES
 import { StyledTetris, StyledTetrisWrapper } from './styles/StyledTetris'
@@ -8,7 +8,7 @@ import { StyledTetris, StyledTetrisWrapper } from './styles/StyledTetris'
 import Stage from './Stage'
 import Display from './Display'
 import StartButton from './StartButton'
-import Highscores from './Highscores'
+
 import GameOver from './GameOver'
 
 // HELPERS

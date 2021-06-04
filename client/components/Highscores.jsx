@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import {Link} from 'react-router-dom'
 import { getHighscoresApi } from '../API/highscoreAPI'
 
 export default function Highscores () {
@@ -18,6 +18,7 @@ export default function Highscores () {
 
   return (
     <div>
+      <Link to='/'>Close</Link>
       <table>
         <thead>
           <tr>
