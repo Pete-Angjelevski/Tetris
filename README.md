@@ -1,28 +1,96 @@
-# A starter webpack project for React
+# Full Stack Tetris Game 
 
-This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
+Technology Utilised:
 
-* Fork this repo
-* Rename your repo according to the app you're building
+- React + React Hooks + React Routing
+- Database with SQL and Knex.js
+- RESTful APIs/ Backend Routes with SuperAgent.js and Express.js
+- CSS with Styled Components
 
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && npm i
-```
+** Added TypeScript to project for learning and practice
 
-To start the development server with a watcher that rebuilds your code, run `npm run dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
 
-Additional components should be placed in `client/components`.
+To spin up the app:
 
-## Separate client/server
+* Clone the repo into your drive
+* npm i via chosen command line to install dependencies
+* npm run dev to spin up server 
+* Visit https://localhost:3000 to view app. 
 
-The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
-```sh
-npm run client
-```
-and in the other:
-```sh
-npm run server
-```
-The client will be available on http://localhost:8080 and the server on http://localhost:3000. Note that you will still need to manage CORS between the two, as they are on different ports.
+## GOAL 1 (Completed)
+
+Scaffold tetris game components
+
+
+## GOAL 2 (Completed)
+
+Create Stage and Tetrominos logic
+
+
+## GOAL 3 (Completed)
+
+Add Styled Components - CSS structure to Tetris stage and display
+
+
+## GOAL 4 (Completed)
+
+Create usePlayer and useStage Hooks
+
+
+## GOAL 5 (Completed)
+
+Add tetromino movement logic
+
+
+## GOAL 6 (Completed) 
+
+Add Tetrominos collision detection logic
+
+
+## GOAL 7 (Completed)
+
+Add Tetrominos Rotation Logic 
+
+
+## GOAL 8 (Completed)
+
+Add Row Clear logic when row is completed
+
+
+## GOAL 9 (Completed) 
+
+Add Drop Timer Logic + Level Increase wiht useInterval Hooks
+
+
+## GOAL 10 (Completed)
+
+Add Scoring and Game Over logic 
+
+
+## GOAL 11 (Completed)
+
+Create Highscore SQL Database
+
+
+## GOAL 12 (Completed)
+
+Create getHighscores routes/ dbHelpers and APIs
+
+
+## GOAL 13 (Completed)
+
+Reformat GameOver component and create AddHighscore routes/ dbHelpers and APIs
+
+
+## STRETCH 
+
+- Pause Game functionality 
+- Reformat Game Presentation
+- Add further CSS to unstyled components and touch ups 
+- Transform into mobile app with React Native 
+
+
+
+
+
 
